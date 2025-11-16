@@ -1,0 +1,42 @@
+# robots.txt for Veo 3 Script Writer
+
+# Apply rules to all crawlers
+User-agent: *
+Allow: /
+
+# Block duplicate or private sections (adjust if not used)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cgi-bin/         # standard (if exists)
+
+# Do NOT block .html pages (required for indexing and AdSense review)
+
+# Crawl delay (only if server load issues; otherwise remove)
+# Crawl-delay: 1
+
+# Explicit allowances for key crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Google advertising and indexing bots
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# XML Sitemap location
+Sitemap: https://www.avioncitojuego.com/sitemap.xml

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Video Creation Tutorials & Guides | Veo 3 Script Writer</title>
+    <meta name="description" content="Learn video creation, script writing, and AI tools with our comprehensive tutorials. Step-by-step guides for beginners to advanced creators.">
+    <meta name="keywords" content="video creation tutorials, script writing guides, AI video tools, filmmaking tutorials, content creation training">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.avioncitojuego.com/tutorials">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        /* Tutorial Card Image Styles */
+        .tutorial-card {
+            overflow: hidden;
+        }
+        
+        .tutorial-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .tutorial-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .tutorial-card:hover .tutorial-image img {
+            transform: scale(1.05);
+        }
+        
+        .tutorial-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>
+                    <img src="/images/logo.png" alt="Veo 3 Script Writer" style="height: 40px; margin-right: 8px; vertical-align: middle;">
+                    <a href="/" style="text-decoration: none; color: inherit;">Veo 3 Script Writer</a>
+                </h1>
+                <span class="by-raogy">by RAOGY</span>
+            </div>
+            <div class="header-controls">
+                <a href="/" class="header-link">
+                    <i class="fas fa-home"></i> <span>Home</span>
+                </a>
+                <a href="/blog" class="header-link">
+                    <i class="fas fa-blog"></i> <span>Blog</span>
+                </a>
+                <a href="/tutorials" class="header-link active">
+                    <i class="fas fa-graduation-cap"></i> <span>Tutorials</span>
+                </a>
+                <a href="/about" class="header-link">
+                    <i class="fas fa-info-circle"></i> <span>About</span>
+                </a>
+                <a href="/contact" class="header-link">
+                    <i class="fas fa-envelope"></i> <span>Contact</span>
+                </a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="tutorials-hero">
+                <div class="tutorials-hero-content">
+                    <h1><i class="fas fa-graduation-cap"></i> Video Creation Tutorials</h1>
+                    <p>Master video creation, script writing, and AI tools with our comprehensive step-by-step tutorials designed for creators of all skill levels.</p>
+                </div>
+            </section>
+
+            <!-- Featured Tutorials -->
+            <section class="featured-tutorials">
+                <h2><i class="fas fa-star"></i> Featured Tutorials</h2>
+                <div class="tutorials-grid">
+                    <article class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="/tutorials/images/script-template-format.webp" alt="How to Write Your First Video Script" loading="lazy">
+                        </div>
+                        <div class="tutorial-header">
+                            <div class="tutorial-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="tutorial-meta">
+                                <span class="difficulty beginner">Beginner</span>
+                                <span class="duration">15 min</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-content">
+                            <h3>How to Write Your First Video Script</h3>
+                            <p>Complete beginner's guide to writing professional video scripts from concept to final draft. Learn structure, dialogue, and formatting basics.</p>
+                            <div class="tutorial-steps">
+                                <span><i class="fas fa-list"></i> 5 Steps</span>
+                                <span><i class="fas fa-download"></i> Template Included</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-footer">
+                            <a href="/tutorials/how-to-write-your-first-video-script.html" class="tutorial-btn">Start Tutorial</a>
+                        </div>
+                    </article>
+
+                    <article class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="/images/veo3-interface-dashboard.webp" alt="Mastering Veo 3 for Professional Videos" loading="lazy">
+                        </div>
+                        <div class="tutorial-header">
+                            <div class="tutorial-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="tutorial-meta">
+                                <span class="difficulty intermediate">Intermediate</span>
+                                <span class="duration">25 min</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-content">
+                            <h3>Mastering Veo 3 for Professional Videos</h3>
+                            <p>Advanced techniques for using Google's Veo 3 AI video generation platform. Character consistency, scene optimization, and quality enhancement.</p>
+                            <div class="tutorial-steps">
+                                <span><i class="fas fa-list"></i> 8 Steps</span>
+                                <span><i class="fas fa-code"></i> Code Examples</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-footer">
+                            <a href="/tutorials/mastering-veo-3-professional-videos.html" class="tutorial-btn">Start Tutorial</a>
+                        </div>
+                    </article>
+
+                    <article class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="/images/automation-rendering-dashboard.webp" alt="Automation Scripts for Rendering Scene Batches" loading="lazy">
+                        </div>
+                        <div class="tutorial-header">
+                            <div class="tutorial-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="tutorial-meta">
+                                <span class="difficulty advanced">Advanced</span>
+                                <span class="duration">30 min</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-content">
+                            <h3>Automation Scripts for Rendering Scene Batches</h3>
+                            <p>Professional guide to automation scripts that render scene batches, track failures, and resume jobs with minimal manual oversight.</p>
+                            <div class="tutorial-steps">
+                                <span><i class="fas fa-list"></i> 10 Steps</span>
+                                <span><i class="fas fa-code"></i> Full Scripts</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-footer">
+                            <a href="/tutorials/automation-scripts-rendering-batches.html" class="tutorial-btn">Start Tutorial</a>
+                        </div>
+                    </article>
+
+                    <article class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="/images/character-consistency-comparison.webp" alt="System Prompts for Character Consistency" loading="lazy">
+                        </div>
+                        <div class="tutorial-header">
+                            <div class="tutorial-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="tutorial-meta">
+                                <span class="difficulty intermediate">Intermediate</span>
+                                <span class="duration">20 min</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-content">
+                            <h3>System Prompts for Character Consistency</h3>
+                            <p>Master slot tokens for costume, lighting, and camera moves across multi-scene videos. Learn to maintain perfect character consistency with system prompts.</p>
+                            <div class="tutorial-steps">
+                                <span><i class="fas fa-list"></i> 6 Steps</span>
+                                <span><i class="fas fa-magic"></i> Advanced Techniques</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-footer">
+                            <a href="/tutorials/system-prompts-character-consistency.html" class="tutorial-btn">Start Tutorial</a>
+                        </div>
+                    </article>
+
+                    <article class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="/tutorials/images/composition-techniques.webp" alt="Visual Storytelling Techniques" loading="lazy">
+                        </div>
+                        <div class="tutorial-header">
+                            <div class="tutorial-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="tutorial-meta">
+                                <span class="difficulty beginner">Beginner</span>
+                                <span class="duration">18 min</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-content">
+                            <h3>Visual Storytelling Techniques</h3>
+                            <p>Master camera angles, color theory, composition, and visual metaphors to create impactful and engaging video content that resonates with your audience.</p>
+                            <div class="tutorial-steps">
+                                <span><i class="fas fa-list"></i> 7 Steps</span>
+                                <span><i class="fas fa-eye"></i> Visual Examples</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-footer">
+                            <a href="/tutorials/visual-storytelling-techniques.html" class="tutorial-btn">Start Tutorial</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Related Blog Articles -->
+                <div class="related-content-section" style="margin-top: 50px; padding: 40px 20px; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 15px;">
+                    <h2 style="text-align: center; margin-bottom: 30px;"><i class="fas fa-blog"></i> Related Blog Articles</h2>
+                    <p style="text-align: center; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                        Dive deeper into video creation with our comprehensive blog articles covering advanced techniques, industry insights, and creative strategies.
+                    </p>
+                    <div class="tutorials-grid">
+                        <article class="tutorial-card">
+                            <div class="tutorial-image">
+                                <img src="/images/prompt-engineering-components.webp" alt="Veo 3 Prompt Engineering Guide" loading="lazy">
+                            </div>
+                            <div class="tutorial-header">
+                                <div class="tutorial-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="tutorial-meta">
+                                    <span class="difficulty intermediate" style="background: #667eea;">Blog Article</span>
+                                    <span class="duration">12 min read</span>
+                                </div>
+                            </div>
+                            <div class="tutorial-content">
+                                <h3>The Complete Guide to Veo 3 Prompt Engineering</h3>
+                                <p>Master prompt engineering for Veo 3 with scene atoms and dialogue tokens. Learn constraint-based AI video generation for professional results.</p>
+                                <div class="tutorial-steps">
+                                    <span><i class="fas fa-book"></i> Complete Guide</span>
+                                    <span><i class="fas fa-star"></i> Latest Article</span>
+                                </div>
+                            </div>
+                            <div class="tutorial-footer">
+                                <a href="/blog/prompt-engineering-veo3-scene-atoms.html" class="tutorial-btn">Read Article</a>
+                            </div>
+                        </article>
+
+                        <article class="tutorial-card">
+                            <div class="tutorial-image">
+                                <img src="/images/character-development-hero.webp" alt="Building Memorable Characters" loading="lazy">
+                            </div>
+                            <div class="tutorial-header">
+                                <div class="tutorial-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="tutorial-meta">
+                                    <span class="difficulty intermediate" style="background: #667eea;">Blog Article</span>
+                                    <span class="duration">10 min read</span>
+                                </div>
+                            </div>
+                            <div class="tutorial-content">
+                                <h3>Building Memorable Characters for Video Content</h3>
+                                <p>Essential character development techniques for creating compelling, relatable characters that resonate with your audience.</p>
+                                <div class="tutorial-steps">
+                                    <span><i class="fas fa-book"></i> Comprehensive Guide</span>
+                                    <span><i class="fas fa-lightbulb"></i> Expert Tips</span>
+                                </div>
+                            </div>
+                            <div class="tutorial-footer">
+                                                            <a href="/blog/building-memorable-characters-video-content.html" class="tutorial-btn">Read Article</a>
+                        </div>
+                    </article>
+
+                    <article class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="/images/workflow-video-creation.webp" alt="Visual Storytelling Techniques" loading="lazy">
+                        </div>
+                        <div class="tutorial-header">
+                            <div class="tutorial-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="tutorial-meta">
+                                <span class="difficulty intermediate" style="background: #667eea;">Blog Article</span>
+                                <span class="duration">11 min read</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-content">
+                            <h3>Visual Storytelling Techniques for Modern Video</h3>
+                            <p>Master composition, color theory, pacing, and cinematic methods that captivate audiences and elevate your video content.</p>
+                            <div class="tutorial-steps">
+                                <span><i class="fas fa-book"></i> In-Depth Analysis</span>
+                                <span><i class="fas fa-image"></i> Visual Examples</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-footer">
+                            <a href="/blog/visual-storytelling-techniques-video.html" class="tutorial-btn">Read Article</a>
+                        </div>
+                    </article>
+
+                    <article class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="/images/dialogue-hero.webp" alt="10 Tips for Writing Better Dialogue" loading="lazy">
+                        </div>
+                        <div class="tutorial-header">
+                            <div class="tutorial-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="tutorial-meta">
+                                <span class="difficulty intermediate" style="background: #667eea;">Blog Article</span>
+                                <span class="duration">9 min read</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-content">
+                            <h3>10 Tips for Writing Better Dialogue</h3>
+                            <p>Transform your video scripts with dialogue that sounds natural, serves your story, and keeps audiences engaged.</p>
+                            <div class="tutorial-steps">
+                                <span><i class="fas fa-book"></i> Practical Tips</span>
+                                <span><i class="fas fa-check"></i> Actionable Advice</span>
+                            </div>
+                        </div>
+                        <div class="tutorial-footer">
+                            <a href="/blog/10-tips-better-dialogue-writing.html" class="tutorial-btn">Read Article</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="/blog" style="display: inline-block; background: #667eea; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600;">
+                            <i class="fas fa-arrow-right"></i> View All Blog Posts
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>RAOGY</h3>
+                    <p>Professional AI Tools for Creators</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="/"><i class="fas fa-home"></i> Home</a>
+                    <a href="/privacy-policy"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                    <a href="/terms-of-service"><i class="fas fa-file-contract"></i> Terms of Service</a>
+                    <a href="/cookie-policy"><i class="fas fa-cookie-bite"></i> Cookie Policy</a>
+                    <a href="/disclaimer"><i class="fas fa-exclamation-triangle"></i> Disclaimer</a>
+                    <a href="/sitemap"><i class="fas fa-sitemap"></i> Sitemap</a>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; 2025 RAOGY. All rights reserved. Professional AI Tools for Content Creators.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn">
+        <i class="fas fa-arrow-up"></i>
+        <span>Top</span>
+    </button>
+
+    <script src="/config.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

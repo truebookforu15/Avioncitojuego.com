@@ -3,12 +3,12 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/blog/:path*",
-      "destination": "/blog/:path*.html"
+      "source": "/blog/:path",
+      "destination": "/blog/:path.html"
     },
     {
-      "source": "/tutorials/:path*",
-      "destination": "/tutorials/:path*.html"
+      "source": "/tutorials/:path",
+      "destination": "/tutorials/:path.html"
     }
   ],
   "headers": [

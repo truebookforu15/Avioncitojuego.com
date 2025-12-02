@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
         generateContentApi: 'generateContent',
         
         // API Key for authentication (required for browser-based access)
-        geminiApiKey: 'AIzaSyCC6-Stx529wWzweJSXu0ftnQq-GP4-NKk', // Your actual API key
+        geminiApiKey: 'AIzaSyCnw9Rg9yNIBM1MEXAntP_tN37tfwZQIUk', // Your actual API key
         
         // Standard Gemini API URL for Gemini 2.0 Flash Lite (works in browsers)
         geminiApiUrl: 'https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash-lite-001:generateContent',

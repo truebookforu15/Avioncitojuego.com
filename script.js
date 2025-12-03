@@ -39,6 +39,65 @@ if (document.readyState === 'loading') {
     initializeTheme();
 }
 
+// Mobile Menu Toggle Functionality
+function initMobileMenu() {
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileNavDropdown = document.querySelector('.mobile-nav-dropdown');
+    
+    if (mobileMenuToggle && mobileNavDropdown) {
+        // Toggle menu on button click
+        mobileMenuToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isOpen = mobileNavDropdown.classList.toggle('active');
+            // Update icon
+            const icon = mobileMenuToggle.querySelector('i');
+            if (icon) {
+                icon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+            }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileMenuToggle.contains(e.target) && !mobileNavDropdown.contains(e.target)) {
+                mobileNavDropdown.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                if (icon) {
+                    icon.className = 'fas fa-bars';
+                }
+            }
+        });
+        
+        // Close menu when clicking a link
+        mobileNavDropdown.querySelectorAll('.header-link').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileNavDropdown.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                if (icon) {
+                    icon.className = 'fas fa-bars';
+                }
+            });
+        });
+        
+        // Close menu on window resize (if switching to desktop)
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                mobileNavDropdown.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                if (icon) {
+                    icon.className = 'fas fa-bars';
+                }
+            }
+        });
+    }
+}
+
+// Initialize mobile menu on DOM load
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMobileMenu);
+} else {
+    initMobileMenu();
+}
+
 // Add event listeners for theme toggle buttons on all pages
 document.addEventListener('DOMContentLoaded', function() {
     // Add event listener for scroll to top button

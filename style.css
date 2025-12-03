@@ -615,9 +615,8 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     text-align: left;
-    white-space: nowrap;
 }
 
 .logo h1 i {

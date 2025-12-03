@@ -45,30 +45,45 @@ function initMobileMenu() {
     const mobileNavDropdown = document.querySelector('.mobile-nav-dropdown');
     
     if (mobileMenuToggle && mobileNavDropdown) {
-        // Toggle menu on button click
-        mobileMenuToggle.addEventListener('click', function(e) {
+        console.log('Mobile menu initialized');
+        
+        // Toggle menu on button click/touch
+        const toggleMenu = function(e) {
+            e.preventDefault();
             e.stopPropagation();
+            
             const isOpen = mobileNavDropdown.classList.toggle('active');
+            console.log('Menu toggled:', isOpen);
+            
             // Update icon
             const icon = mobileMenuToggle.querySelector('i');
             if (icon) {
                 icon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
             }
+        };
+        
+        // Use both click and touchend for better mobile support
+        mobileMenuToggle.addEventListener('click', toggleMenu);
+        mobileMenuToggle.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            toggleMenu(e);
         });
         
         // Close menu when clicking outside
         document.addEventListener('click', function(e) {
-            if (!mobileMenuToggle.contains(e.target) && !mobileNavDropdown.contains(e.target)) {
-                mobileNavDropdown.classList.remove('active');
-                const icon = mobileMenuToggle.querySelector('i');
-                if (icon) {
-                    icon.className = 'fas fa-bars';
+            if (mobileNavDropdown.classList.contains('active')) {
+                if (!mobileMenuToggle.contains(e.target) && !mobileNavDropdown.contains(e.target)) {
+                    mobileNavDropdown.classList.remove('active');
+                    const icon = mobileMenuToggle.querySelector('i');
+                    if (icon) {
+                        icon.className = 'fas fa-bars';
+                    }
                 }
             }
         });
         
         // Close menu when clicking a link
-        mobileNavDropdown.querySelectorAll('.header-link').forEach(link => {
+        mobileNavDropdown.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function() {
                 mobileNavDropdown.classList.remove('active');
                 const icon = mobileMenuToggle.querySelector('i');
@@ -88,6 +103,8 @@ function initMobileMenu() {
                 }
             }
         });
+    } else {
+        console.log('Mobile menu elements not found');
     }
 }
 
